@@ -46,6 +46,16 @@ collections:
     template: { name: Chart, num: 5 }
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
     summary: Oscar Winning Movies
+ British Last 2000 onwards:
+    template: { name: Chart, num:  }
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=5.0,&countries=gb
+    summary: Top British Movies Released at least 2000 onwards with a IMBD Rating at least 5, United Kingdom   
+ British Cinema 1940-1960:
+    template: { name: Chart, num:  }
+    imdb_list:  https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,1960-12-31&countries=g
+    summary: Feature Film, Released between 1940-01-01 and 1960-12-31, IMBD Rating at least 5, United Kingdom
+    
+      
   Best of 2014:
     template: { name: Best of, year: 2014 }
   Best of 2015:
@@ -62,17 +72,8 @@ collections:
     template: { name: Best of, year: 2020 }
   Best of 2021:
     template: { name: Best of, year: 2021 }
-
-
-
-
-
-
-
-
-
-
-
+  Best of 2022:
+    template: { name: Best of, year: 2022 }
 
 #####################################
 #     Custom Collection Templates   #
@@ -106,7 +107,6 @@ templates:
     collection_order: release
     collection_mode: hide
 
-
 collections:
 #####################################
 #        Director Collections       #
@@ -127,7 +127,8 @@ collections:
     template: {name: Director, tmdb: 138}
   Wes Anderson:
     template: {name: Director, tmdb: 5655}
-
+  David Lean:
+    template: {name: Director, tmdb: 12238}
 
 #####################################
 #         Studio Collections        #
