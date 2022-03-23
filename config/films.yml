@@ -41,9 +41,10 @@ templates:
     tmdb_person: <<person>>
     sort_title: ++_<<collection_name>>
     collection_order: release
+
 collections:
   BAFTA Awards & Nominees:
-    template: {name: Genre, poster: https://i.imgur.com/hNt5VUC.png, url_background: https://i.imgur.com/Cy7Qseh.jpg}
+    template: {name: Genre, poster: https://i.imgur.com/EHgbO0h.png, url_background: https://i.imgur.com/Cy7Qseh.jpg}
     trakt_list:
       - https://trakt.tv/users/pjcob/lists/2021-bafta
       - https://trakt.tv/users/pjcob/lists/2020-bafta
@@ -54,26 +55,29 @@ collections:
       - https://trakt.tv/users/pjcob/lists/2015-bafta
       - https://trakt.tv/users/pjcob/lists/2014-bafta   
     summary: "2014-2021 Bafta Awards and Nominees EXCLUDING: Oscars and Golden Globes nominees"
+
   Oscars:
     template: { name: Genre }
-    imdb_list: https://www.imdb.com/search/title/?companies=co0103091
+    imdb_list: https://www.imdb.com/list/ls055265443/
     summary: Oscar Winning Movies
-    url_poster: https://i.imgur.com/58hBVXD.png
+    url_poster: https://i.imgur.com/P0302iC.png
     url_background: https://i.imgur.com/0Kao9gY.jpeg
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
+
   BFI Top 100 British films:
     template: { name: Genre }
     imdb_list:
     - url:  https://www.imdb.com/list/ls063846014/
       limit: 100
     summary: "In 1999 the British Film Institute surveyed 1,000 people from the world of British film and television to produce the BFI 100 list of the greatest British films of the 20th century. Voters were asked to choose up to 100 films that were 'culturally British'."
-    url_poster: https://i.imgur.com/sY3AtfI.png
+    url_poster: https://i.imgur.com/VNm8M65.png
     url_background: https://i.imgur.com/yPiWWA1.jpg
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
+
   Best 100 movies of British Cinema 1940-1950:
     template: { name: Genre }
     imdb_list:
@@ -110,7 +114,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls056285887/
     summary: Films made by the British production company Ealing Studios and its predecessor Associated Talking Pictures.Prior to 1932 and after 1956, the company's films were made at studios other than Ealing. This list does not include films made at Ealing Studios by other companies.
-    url_poster: https://i.imgur.com/iWxeH1q.png
+    url_poster: https://i.imgur.com/G0b5RGC.png
     url_background: https://i.imgur.com/iayKe65.png
     radarr_add: true
     radarr_search: true
@@ -120,7 +124,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/search/title/?companies=co0103051
     summary: Gainsborough Pictures was a British film studio based on the south bank of the Regent's Canal, in Poole Street, Hoxton in the former Metropolitan Borough of Shoreditch, north London. Gainsborough Studios was active between 1924 and 1951. The company was initially based at Islington Studios, which were built as a power station for the Great Northern & City Railway and later converted to studios.
-    url_poster: https://i.imgur.com/8SOEp9Q.png
+    url_poster: https://i.imgur.com/vYdeF14.png
     url_background: https://i.imgur.com/xdwSS8z.png
     radarr_add: true
     radarr_search: true
@@ -166,7 +170,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls022320637/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/uxv9toJ.png
+    url_poster: https://i.imgur.com/ho0Dcgy.png
     url_background: https://i.imgur.com/CaO9TBt.png
     radarr_add: true
     radarr_search: true
@@ -176,7 +180,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls055976873/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/nHdloth.png
+    url_poster: https://i.imgur.com/bZ1sSci.png
     url_background: https://i.imgur.com/pb0ocQX.jpg
     radarr_add: true
     radarr_search: true
@@ -186,7 +190,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls008222136/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/5j8zelL.png
+    url_poster: https://i.imgur.com/KuADbmu.png
     url_background: https://i.imgur.com/9WaYYwQ.png
     radarr_add: true
     radarr_search: true
@@ -196,7 +200,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls033929193/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/iKx3qsF.png
+    url_poster: https://i.imgur.com/xva14Xm.png
     url_background: https://i.imgur.com/Yep1CNw.jpg
     radarr_add: true
     radarr_search: true
@@ -701,8 +705,15 @@ collections:
 ###########################
 #    Decade Collections   #
 ###########################
+  
   30's Movies:
-    template: {name: Decade, year: 1930, poster: https://theposterdb.com/api/assets/105675}
+    template: {name: Decade, year: 1930}
+    summary: "The 1930s was a decade of political turmoil and economic problems; the Great Depression had affected the entire world, and Europe was dealing with both the fallout of World War I and the economic hardships of the time, both of which resulted in the rise of fascist political movements. The uncertainty of the era resulted in widespread popularity of fantastical, escapist fare. Swashbuckling adventures and the safe scares of the Universal Horror films were highly successful during this period"
+    url_poster: https://i.imgur.com/f7OjJhp.png
+    url_background: https://i.imgur.com/hmwfrSX.jpg
+    
+
+
   40's Movies:
     template: {name: Decade, year: 1940, poster: https://theposterdb.com/api/assets/105676}
   50's Movies: 
@@ -734,7 +745,7 @@ collections:
       decade: 2020
     sort_title: +++_Decade
     collection_order: alpha
-    url_poster: https://i.imgur.com/JXbctdQ.png
+    url_poster: https://i.imgur.com/3mBV5p0.png
     url_background: https://i.imgur.com/3gXUKzb.jpg
 
 
