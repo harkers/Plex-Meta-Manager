@@ -707,7 +707,10 @@ collections:
 ###########################
   
   30's Movies:
-    template: {name: Decade, year: 1930}
+    plex_search:
+      decade: 1930
+    sort_title: +++_Decade
+    collection_order: alpha
     summary: "The 1930s was a decade of political turmoil and economic problems; the Great Depression had affected the entire world, and Europe was dealing with both the fallout of World War I and the economic hardships of the time, both of which resulted in the rise of fascist political movements. The uncertainty of the era resulted in widespread popularity of fantastical, escapist fare. Swashbuckling adventures and the safe scares of the Universal Horror films were highly successful during this period"
     url_poster: https://i.imgur.com/f7OjJhp.png
     url_background: https://i.imgur.com/hmwfrSX.jpg
