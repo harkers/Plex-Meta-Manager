@@ -43,8 +43,12 @@ templates:
     collection_order: release
 
 collections:
+###########################
+#  Industry Accolades     #
+###########################
+
   BAFTA Awards & Nominees:
-    template: {name: Genre, poster: https://i.imgur.com/EHgbO0h.png, url_background: https://i.imgur.com/Cy7Qseh.jpg}
+    template: {name: Genre}
     trakt_list:
       - https://trakt.tv/users/pjcob/lists/2021-bafta
       - https://trakt.tv/users/pjcob/lists/2020-bafta
@@ -53,8 +57,32 @@ collections:
       - https://trakt.tv/users/pjcob/lists/2017-bafta
       - https://trakt.tv/users/pjcob/lists/2016-bafta
       - https://trakt.tv/users/pjcob/lists/2015-bafta
-      - https://trakt.tv/users/pjcob/lists/2014-bafta   
+      - https://trakt.tv/users/pjcob/lists/2014-bafta
+    imdb_list:
+      - https://www.imdb.com/list/ls534287661/
+    summary: "2014-2022 Bafta Awards and Nominees"
+    url_poster: https://i.imgur.com/sQCGvlE.png
+    url_background: https://i.imgur.com/Cy7Qseh.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Golden Globe Movies 2016-2022:
+    template: {name: Genre}
+    imdb_list:
+      - https://www.imdb.com/list/ls084842833/
+      - https://www.imdb.com/list/ls574528766/
+      - https://www.imdb.com/list/ls091289145/
+      - https://www.imdb.com/list/ls091295176/
+      - https://www.imdb.com/list/ls027637305/
+      - https://www.imdb.com/list/ls021513557/
+      - https://www.imdb.com/list/ls031464703/
     summary: "2014-2021 Bafta Awards and Nominees EXCLUDING: Oscars and Golden Globes nominees"
+    url_poster: https://i.imgur.com/T00XfL5.png
+    url_background: https://i.imgur.com/wwQf26t.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
 
   Oscars:
     template: { name: Genre }
@@ -66,13 +94,73 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
+  Toronto International Film Festival:
+    template: {name: Genre, poster: , url_background: }
+    trakt_list:
+      - https://trakt.tv/users/vermelholimao/lists/tiff-2020-45th-toronto-international-film-festival?sort=rank,asc
+      - https://trakt.tv/users/vermelholimao/lists/tiff-2019-44th-toronto-international-film-festival?sort=rank,asc
+    summary: "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976"
+    url_poster: https://i.imgur.com/RVLeK3o.png
+    url_background: https://i.imgur.com/2zv03KG.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+  
+  (2021 Academy Awards):
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls500035974/
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2021
+    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
+    url_poster: https://i.imgur.com/HhpBvRR.png
+    url_background: https://i.imgur.com/0Kao9gY.jpeg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  (2022 Academy Awards):
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls507682673/
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Oscar Nominees 2022
+    summary: "The 94th Academy Awards ceremony is scheduled to take place on Sunday 27TH March, The Oscar nominations for the 94th Academy Awards were announced on Feb. 8 while the ceremony is just around the corner, and for the first time in ten years, there are ten films nominated for Best Picture. As with any year, the Oscar nominees are a diverse array of film titles that range in genre, tone, and subject from political satires, to revisionist westerns, to biographical dramas" 
+    url_poster: https://i.imgur.com/RQbT5x1.png
+    url_background: https://i.imgur.com/WGkqr9q.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+  
+  Sundance Film Festival 2016-2022:
+    template: {name: Genre}
+    imdb_list:
+      - https://www.imdb.com/list/ls031358004/
+      - https://www.imdb.com/list/ls062148915/
+      - https://www.imdb.com/list/ls027977146/
+      - https://www.imdb.com/list/ls044027857/
+      - https://www.imdb.com/list/ls093737198/
+      - https://www.imdb.com/list/ls538465943/
+    trakt_list: 
+      - https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
+    sync_mode: sync
+    sort_title: ++++++++++++++++++_Sundance Collection
+    summary: "The Sundance Film Festival (formerly Utah/US Film Festival, then US Film and Video Festival) is an annual film festival organized by the Sundance Institute. It is the largest independent film festival in the United States, with more than 46,660 attending in 2016"
+    url_poster: https://i.imgur.com/lpMLgwZ.png
+    url_background: https://i.imgur.com/9KoyW1L.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+###########################
+#      British Film       #
+########################### 
+    
   BFI Top 100 British films:
     template: { name: Genre }
     imdb_list:
     - url:  https://www.imdb.com/list/ls063846014/
       limit: 100
     summary: "In 1999 the British Film Institute surveyed 1,000 people from the world of British film and television to produce the BFI 100 list of the greatest British films of the 20th century. Voters were asked to choose up to 100 films that were 'culturally British'."
-    url_poster: https://i.imgur.com/VNm8M65.png
+    url_poster: https://i.imgur.com/n7RptJX.png
     url_background: https://i.imgur.com/yPiWWA1.jpg
     radarr_add: true
     radarr_search: true
@@ -83,19 +171,8 @@ collections:
     imdb_list:
     - url:  https://www.imdb.com/search/title/?title_type=feature&release_date=1940-01-01,1950-12-31&countries=gb
     summary: British Feature Films Released between 1940-01-01 and 1950-12-31 with IMBD Rating at least 5
-    url_poster: https://i.imgur.com/PHlgelY.png
+    url_poster: https://i.imgur.com/ZJR3XJP.png
     url_background: https://i.imgur.com/1jMapbA.jpg
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
-
-  Movies with an IMBD Rating of 8 from 2000 onwards:
-    template: { name: Genre }
-    imdb_list: 
-    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=8.0,&countries=gb
-    summary: Movies Released 2000 onwards with a IMBD Rating at least 8
-    url_poster: https://i.imgur.com/AGGRbFV.png
-    url_background: https://i.imgur.com/HIrmcBt.jpg
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
@@ -104,7 +181,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/search/title/?companies=co0103091
     summary: Associated British Picture Corporation (ABPC), originally British International Pictures (BIP), was a British film production, distribution and exhibition company active from 1927 until 1970 when it was absorbed into EMI. ABPC also owned approximately 500 cinemas in Britain by 1943
-    url_poster: https://i.imgur.com/SN44tR0.jpg
+    url_poster: https://i.imgur.com/IZ4twDp.png
     url_background: https://i.imgur.com/1Dz9rRw.jpg
     radarr_add: true
     radarr_search: true
@@ -134,7 +211,7 @@ collections:
     template: { name: Genre }
     sync_mode: sync
     sort_title: +++++++++++++++++++++_1Sky
-    imdb_list: https://www.imdb.com/list/ls044197135/
+    imdb_list: https://www.imdb.com/list/ls538988849
     summary: Sky Studios is a production company founded by Sky in June 2019. It develops, produces and funds original drama, comedy and documentary, and has investments in a number of production businesses in the UK and US
     url_poster: https://i.imgur.com/kkcillK.png
     url_background: https://i.imgur.com/dc9MCZ7.png
@@ -170,7 +247,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls022320637/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/ho0Dcgy.png
+    url_poster: https://i.imgur.com/0VfRCNa.png
     url_background: https://i.imgur.com/CaO9TBt.png
     radarr_add: true
     radarr_search: true
@@ -180,7 +257,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls055976873/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/bZ1sSci.png
+    url_poster: https://i.imgur.com/Is6oTGx.png
     url_background: https://i.imgur.com/pb0ocQX.jpg
     radarr_add: true
     radarr_search: true
@@ -190,7 +267,7 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls008222136/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/KuADbmu.png
+    url_poster: https://i.imgur.com/JfYb1XF.png
     url_background: https://i.imgur.com/9WaYYwQ.png
     radarr_add: true
     radarr_search: true
@@ -200,67 +277,31 @@ collections:
     template: { name: Genre }
     imdb_list: https://www.imdb.com/list/ls033929193/
     summary: British filmmakers have proved they can tackle any genre, and the best British movies around can be anything, putting the best British movies up against anywhere else in the world
-    url_poster: https://i.imgur.com/xva14Xm.png
+    url_poster: https://i.imgur.com/wkW34sS.png
     url_background: https://i.imgur.com/Yep1CNw.jpg
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
 
-  Latest Releases:
-    template: { name: Genre }
-    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases?sort=added,asc
-    sort_title: +++++++++++++++++++++_1AARDVARK
-    summary: "Latest Realeases as published from TRAK.TV"
-    url_poster: https://i.imgur.com/InRiOve.png
-    url_background: https://i.imgur.com/aVVCxPi.jpg
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
 
-  Toronto International Film Festival:
-    template: {name: Genre, poster: , url_background: }
-    trakt_list:
-      - https://trakt.tv/users/vermelholimao/lists/tiff-2020-45th-toronto-international-film-festival?sort=rank,asc
-      - https://trakt.tv/users/vermelholimao/lists/tiff-2019-44th-toronto-international-film-festival?sort=rank,asc
-    summary: "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976"
-    url_poster: https://i.imgur.com/RVLeK3o.png
-    url_background: https://i.imgur.com/2zv03KG.png
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
+###########################
+#   Streaming Services    #
+########################### 
 
-  Time Travel Movies:
-    template: {name: Genre}
-    trakt_list:
-      - https://trakt.tv/lists/3940186
-      - https://trakt.tv/lists/20709447
-      - https://trakt.tv/lists/2729898
-      - https://trakt.tv/lists/2729898
-      - https://trakt.tv/lists/4297290
-      - https://trakt.tv/lists/2652307
-    imdb_list:
-      - https://www.imdb.com/list/ls068617191/
-      - https://www.imdb.com/list/ls004426453/
-    summary: "A collection of movies that include time travel."
-    url_poster: https://i.imgur.com/2bAeiN3.png
-    url_background: https://i.imgur.com/Y6wPHkE.png
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
-
-  Apple Originals 2021-2025:
+  Apple Originals:
     template: {name: Genre}
     sync_mode: sync
+    sort_title: +++++++++++++++++++++_1APPLE
     imdb_list:
-    url: https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_special,tv_miniseries,documentary,video,tv_short&release_date=2021-01-01,2025-12-31&genres=!animation&countries=us&languages=en&sort=release_date,desc&count=250&companies=co0546168
-    summary: All Apple TV Originals From 2021-2025
+      url: https://www.imdb.com/list/ls538449302/
+    summary: All Apple TV Originals From 2018-2025
     url_poster: https://theposterdb.com/api/assets/80809
     url_background: https://i.imgur.com/LYigDyz.jpg
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
 
-  Amazon Originals 2021-2025:
+  Amazon Originals:
     template: {name: Genre}
     sync_mode: sync
     sort_title: +++++++++++++++++++++_1APPLE
@@ -273,7 +314,7 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
-  Netflix Originals 2021-2025:
+  Netflix Originals:
     template: {name: Genre}
     sync_mode: sync
     sort_title: +++++++++++++++++++++_1Netflix
@@ -286,7 +327,7 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
-  HBO Max Originals 2021-2025:
+  HBO Max Originals:
     template: {name: Genre}
     sync_mode: sync
     sort_title: +++++++++++++++++++++_1HBOMAX
@@ -299,7 +340,7 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
-  HULU Originals 2021-2025:
+  HULU Originals:
     template: {name: Genre}
     sync_mode: sync
     sort_title: +++++++++++++++++++++_1HULU
@@ -319,8 +360,53 @@ collections:
     imdb_list:
       url: https://www.imdb.com/list/ls098575307/
     summary:
-    url_poster: https://i.imgur.com/vvidO2M.png
+    url_poster: https://i.imgur.com/d7NTRVE.png
     url_background: https://i.imgur.com/awlG1PY.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+###########################
+#      Special Genre      #
+########################### 
+
+  Movies with an IMBD Rating of 8 from 2000 onwards:
+    template: { name: Genre }
+    imdb_list: 
+    - url: https://www.imdb.com/search/title/?title_type=feature&release_date=2000-01-01,&user_rating=8.0,&countries=gb
+    summary: Movies Released 2000 onwards with a IMBD Rating at least 8
+    url_poster: https://i.imgur.com/AGGRbFV.png
+    url_background: https://i.imgur.com/HIrmcBt.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true  
+
+  Latest Releases:
+    template: { name: Genre }
+    trakt_list: https://trakt.tv/users/giladg/lists/latest-releases?sort=added,asc
+    sort_title: +++++++++++++++++++++_1AARDVARK
+    summary: "Latest Realeases as published from TRAK.TV"
+    url_poster: https://i.imgur.com/PEYFkVr.png
+    url_background: https://i.imgur.com/aVVCxPi.jpg
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  Time Travel Movies:
+    template: {name: Genre}
+    trakt_list:
+      - https://trakt.tv/lists/3940186
+      - https://trakt.tv/lists/20709447
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/2729898
+      - https://trakt.tv/lists/4297290
+      - https://trakt.tv/lists/2652307
+    imdb_list:
+      - https://www.imdb.com/list/ls068617191/
+      - https://www.imdb.com/list/ls004426453/
+    summary: "A collection of movies that include time travel."
+    url_poster: https://i.imgur.com/dOJLQ5d.png
+    url_background: https://i.imgur.com/Y6wPHkE.png
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
@@ -338,30 +424,6 @@ collections:
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
-
-  (2021 Academy Awards):
-    template: {name: Genre}
-    imdb_list: https://www.imdb.com/list/ls500035974/
-    sync_mode: sync
-    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2021
-    summary: The 93rd Academy Awards ceremony is scheduled to take place on April 25, more than two months later than last year’s ceremony. The awards will recognize films released during a year in which movie theaters were largely closed.  Streaming services, which were already on the rise as an awards-season presence, are poised to dominate in April, both with their own productions (like Netflix’s “Mank”) and with traditional studio films that were released through streaming platforms because of the pandemic (like Searchlight Pictures’s “Nomadland,” which is streaming on Hulu).
-    url_poster: https://i.imgur.com/HhpBvRR.png
-    url_background: https://i.imgur.com/0Kao9gY.jpeg
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
-
-  (2022 Academy Awards):
-    template: {name: Genre}
-    imdb_list: https://www.imdb.com/list/ls507682673/
-    sync_mode: sync
-    sort_title: ++++++++++++++++++_Oscar Nominated Best Picture Movies 2022
-    summary: "The 94th Academy Awards ceremony is scheduled to take place on Sunday 27TH March, The Oscar nominations for the 94th Academy Awards were announced on Feb. 8 while the ceremony is just around the corner, and for the first time in ten years, there are ten films nominated for Best Picture. As with any year, the Oscar nominees are a diverse array of film titles that range in genre, tone, and subject from political satires, to revisionist westerns, to biographical dramas" 
-    url_poster: https://i.imgur.com/RQbT5x1.png
-    url_background: https://i.imgur.com/WGkqr9q.png
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true  
 
   Nostalgia Collection (Classics From The 80s & 90s):
     template: {name: Genre}
@@ -392,19 +454,7 @@ collections:
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
-    
-  Sundance Film Festival 2021:
-    template: {name: Genre}
-    trakt_list: https://trakt.tv/users/hdlists/lists/sundance-2021-movie-guide
-    sync_mode: sync
-    sort_title: ++++++++++++++++++_Sundance 2021 Collection
-    summary: Sundance Film Festival 2021 Movie Guide
-    url_poster: https://i.imgur.com/6CqlOaq.png
-    url_background: https://i.imgur.com/goapGVl.jpg
-    radarr_add: true
-    radarr_search: true
-    radarr_monitor: true
-
+ 
   True Crime Documentaries:
     template: {name: Genre}
     trakt_list: https://trakt.tv/users/hdlists/lists/true-crime-documentaries
@@ -441,6 +491,10 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
+##############################################
+#  British Director & Actor Collections      #
+##############################################
+
   Sherlock Holmes (Basil Rathbone) Collection:
     template: {name: Genre}
     imdb_list: https://www.imdb.com/list/ls066349791/
@@ -471,9 +525,25 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
-
-
-
+  David Lean Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls068032467/
+    summary: "Sir David Lean CBE (25 March 1908 – 16 April 1991) was an English film director, producer, screenwriter and editor. Widely considered one of the most influential directors of all time"
+    url_poster: https://i.imgur.com/voIcm6d.png
+    url_background: https://i.imgur.com/vRR2rcU.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+  
+  Margaret Rutherford Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/list/ls048089856/
+    summary: "Margaret came to prominence following World War II in the film adaptations of Noel Coward's Blithe Spirit, and Oscar Wilde's The Importance of Being Earnest. She won an Academy Award and a Golden Globe Award for her role as the Duchess of Brighton in The V.I.P.s (1963). In the early 1960s she starred as Agatha Christie's character Miss Marple in a series of four George Pollock films. She was appointed an Officer of the Order of the British Empire (OBE) in 1961 and a Dame Commander (DBE) in 1967"
+    url_poster: https://i.imgur.com/5bV3iVP.png
+    url_background: https://i.imgur.com/NrG5FB0.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
 
 ###########################
 #  Holliday Collections   #
@@ -528,6 +598,21 @@ collections:
       start_date: 12/26
       end_date: 01/04
     imdb_list: https://www.imdb.com/list/ls066838460/
+
+###################################
+#   Studio Builder Collections    #
+###################################
+
+  Focus Features Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/search/title/?companies=co0042399
+    summary: "Focus Features LLC is an American film production and distribution company, owned by Comcast as part of Universal Pictures, a division of its wholly owned subsidiary NBCUniversal. Focus Features distributes independent and foreign films in the United States and internationally."
+    url_poster: https://i.imgur.com/2wvc0T8.png
+    url_background: https://i.imgur.com/9t513YC.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
 ###########################
 #   Studio Collections    #
 ########################### 
@@ -702,6 +787,7 @@ collections:
     template: {name: Movie, collection: 328, summary: 328, poster: https://theposterdb.com/api/assets/45080}
   Harry Potter:
     template: {name: Movie, collection: 1241, summary: 1241, poster: https://theposterdb.com/api/assets/737}
+
 ###########################
 #    Decade Collections   #
 ###########################
@@ -712,37 +798,79 @@ collections:
     sort_title: +++_Decade
     collection_order: alpha
     summary: "The 1930s was a decade of political turmoil and economic problems; the Great Depression had affected the entire world, and Europe was dealing with both the fallout of World War I and the economic hardships of the time, both of which resulted in the rise of fascist political movements. The uncertainty of the era resulted in widespread popularity of fantastical, escapist fare. Swashbuckling adventures and the safe scares of the Universal Horror films were highly successful during this period"
-    url_poster: https://i.imgur.com/f7OjJhp.png
+    url_poster: https://i.imgur.com/PAnW5rz.png
     url_background: https://i.imgur.com/hmwfrSX.jpg
     
-
-
   40's Movies:
-    template: {name: Decade, year: 1940, poster: https://theposterdb.com/api/assets/105676}
-  50's Movies: 
-    template: {name: Decade, year: 1950, poster: https://theposterdb.com/api/assets/105677}
+    plex_search:
+      decade: 1940
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/CNmI85q.png
+    url_background: https://i.imgur.com/XrtorPx.jpg
+
+  50's Movies:
+    plex_search:
+      decade: 1950
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/1pmnXo3.png
+    url_background: https://i.imgur.com/RD0pOg8.png
+
   60's Movies:
-    template: {name: Decade, year: 1960, poster: https://theposterdb.com/api/assets/105331}
+    plex_search:
+      decade: 1960
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/bQNTUSu.png
+    url_background: 
+
   70's Movies:
-    template: {name: Decade, year: 1970, poster: https://theposterdb.com/api/assets/105332}
+    plex_search:
+      decade: 1970
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/N6VhEFL.png
+    url_background: https://i.imgur.com/06DSQ6a.png
+
   80's Movies:
-    template: {name: Decade, year: 1980, poster: https://theposterdb.com/api/assets/105333}
+    plex_search:
+      decade: 1980
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/NQj57GL.png
+    url_background: https://i.imgur.com/nn0Pywb.png
+
   90's Movies:
-    template: {name: Decade, year: 1990, poster: https://theposterdb.com/api/assets/105334}
+    plex_search:
+      decade: 1990
+    sort_title: +++_Decade
+    collection_order: alpha
+    summary: 
+    url_poster: https://i.imgur.com/4mH4Myh.png
+    url_background: https://i.imgur.com/xjJkDPY.jpg
+
   00's Movies:
     plex_search:
       decade: 2000
     sort_title: +++_Decade
     collection_order: alpha
-    url_poster: https://i.imgur.com/qSveQz8.png
+    url_poster: https://i.imgur.com/KevAjCj.png
     url_background: https://i.imgur.com/WCgIgBL.jpg
+
   10's Movies:
     plex_search:
       decade: 2010
     sort_title: +++_Decade
     collection_order: alpha
-    url_poster: https://i.imgur.com/LKVEP8t.png
-    url_background: https://i.imgur.com/NwWZ84l.jpg
+    url_poster: https://i.imgur.com/v8Sk91r.png
+    url_background: https://i.imgur.com/rOW2CmH.png
+
   20's Movies:
     plex_search:
       decade: 2020
@@ -1071,6 +1199,3 @@ collections:
   Zack Snyder:
     director: tmdb
     template: {name: people, person: 15217}
-###########################
-#    Genre Collections    #
-###########################
