@@ -625,7 +625,15 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
-
+  Claude Rains Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0001647&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actor&title_type=movie
+    summary: "William Claude Rains, born in the Clapham area of London, was the son of the British stage actor Frederick Rains. The younger Rains followed, making his stage debut at the age of eleven in "Nell of Old Drury." Growing up in the world of theater, he saw not only acting up close but the down-to-earth business end as well"
+    url_poster: https://i.imgur.com/aMTs1SZ.png
+    url_background: https://i.imgur.com/u0SCEC3.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
 
 
  
