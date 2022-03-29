@@ -545,6 +545,17 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
+  Jim Broadbent Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0000980&ref_=filmo_ref_typ&sort=num_votes,desc&mode=detail&page=1&title_type=movie
+    summary: 
+    url_poster: https://i.imgur.com/H9jy7dB.png
+    url_background: https://i.imgur.com/NiVyKy0.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+ 
+
 ###########################
 #  Holliday Collections   #
 ###########################
