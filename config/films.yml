@@ -548,12 +548,64 @@ collections:
   Jim Broadbent Collection:
     template: {name: Genre}
     imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0000980&ref_=filmo_ref_typ&sort=num_votes,desc&mode=detail&page=1&title_type=movie
-    summary: 
+    summary: "One of England's most versatile character actors, Jim Broadbent was born on May 24, 1949, in Lincolnshire, the youngest son of furniture maker Roy Laverick Broadbent and sculptress Doreen "Dee" (Findlay) Broadbent. Jim attended a Quaker boarding school in Reading before successfully applying for a place at an art school"
     url_poster: https://i.imgur.com/H9jy7dB.png
     url_background: https://i.imgur.com/NiVyKy0.png
     radarr_add: true
     radarr_search: true
     radarr_monitor: true
+
+  Cary Grant Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0000026&ref_=filmo_ref_yr&sort=user_rating,desc&mode=detail&page=1&title_type=movie&release_date=%2C1980
+    summary: "Named the #2 Greatest Actor on The Greatest Screen Legends list by the American Film Institute."
+    url_poster: https://i.imgur.com/8KddQXn.png
+    url_background: https://i.imgur.com/uDALUhb.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+ 
+  James Mason Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0000051&ref_=filmo_ref_gnr&sort=user_rating,desc&mode=detail&page=1&title_type=movie&release_date=%2C1970
+    summary: "James Mason was born in Huddersfield and had a film career spanning over 50 years during which he appeared in over 100 films in England and America but never won an Oscar"
+    url_poster: https://i.imgur.com/zqNEL6t.png
+    url_background: https://i.imgur.com/lvZypAe.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+ 
+  Judi Dench Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0001132&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actress&title_type=movie
+    summary: "Dame Judi Dench was born Judith Olivia Dench in York, England, to Eleanora Olive (Jones), who was from Dublin, Ireland, and Reginald Arthur Dench, a doctor from Dorset, England. She attended Mount School in York, and studied at the Central School of Speech and Drama"
+    url_poster: https://i.imgur.com/5iQ1PkI.png
+    url_background: https://i.imgur.com/FtCOUAT.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+  
+  Jack Hawkins Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0370144&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actor&title_type=movie
+    summary: "Jack was born at 45 Lyndhurst Road, Wood Green, London, the son of a builder and one of the most popular British film stars of the 1950s, he was best known for his portrayal of military men"
+    url_poster: https://i.imgur.com/MjMjIGo.png
+    url_background: https://i.imgur.com/WlcnRBj.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  John Mills Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0590055&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actor&title_type=movie
+    summary: "Sir John Mills, one of the most popular and beloved English actors, was born Lewis Ernest Watts Mills on February 22, 1908, at the Watts Naval Training College in North Elmham, Norfolk, England. The young Mills grew up in Felixstowe, Suffolk, where his father was a mathematics teacher and his mother was a theater box-office manager"
+    url_poster: https://i.imgur.com/KDQrYFB.png
+    url_background: https://i.imgur.com/3yD7NS5.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+
  
 
 ###########################
