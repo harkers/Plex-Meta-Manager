@@ -605,6 +605,28 @@ collections:
     radarr_search: true
     radarr_monitor: true
 
+  Alastair Sim Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0799237&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actor&title_type=movie
+    summary: "Alastair Sim was educated in Edinburgh. Always interested in language (especially the spoken word) he became the Fulton Lecturer in Elocution at New College, Edinburgh University from 1925 until 1930"
+    url_poster: https://i.imgur.com/7uWIlij.png
+    url_background: https://i.imgur.com/rRjCI7P.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+  David Niven Collection:
+    template: {name: Genre}
+    imdb_list: https://www.imdb.com/filmosearch/?explore=title_type&role=nm0000057&ref_=filmo_ref_job_typ&sort=user_rating,desc&mode=detail&page=1&job_type=actor&title_type=movie
+    summary: "David Niven attended Stowe School and Sandhurst Military Academy and served for two years in Malta with the Highland Light Infantry. At the outbreak of World War II, although a top-line star, he re-joined the army (Rifle Brigade). He did agreed to appear in two films during the war, both of strong propaganda value (Spitfire (1942) and The Way Ahead (1944))"
+    url_poster: https://i.imgur.com/VuYmtMj.png
+    url_background: https://i.imgur.com/JZGRh2v.png
+    radarr_add: true
+    radarr_search: true
+    radarr_monitor: true
+
+
+
 
  
 
